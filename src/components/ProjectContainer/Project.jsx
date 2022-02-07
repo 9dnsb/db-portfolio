@@ -11,7 +11,7 @@ function Project() {
         <h2 className="card-title">Apex Legends Data Tracker</h2>
         <p>
           Website that displays stats and info for the game Apex Legends. Users
-          can access up to date game info and player stats
+          can access up-to-date game info and player stats
         </p>
         <div className="justify-center card-actions">
           <button className="btn btn-outline btn-accent">
