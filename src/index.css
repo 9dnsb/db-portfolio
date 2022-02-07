@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-img-size {
+  width: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 600px) {
+  .main-img-size {
+    width: 80% !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
+    .main-img-size {
+      width: 60% !important;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 600px) {
+    .main-img-size {
+      width: 50% !important;
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 600px) {
+    .main-img-size {
+      width: 40% !important;
+    }
+  }
+}

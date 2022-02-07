@@ -1,12 +1,13 @@
+import Project from '../components/ProjectContainer/Project'
+
 function Home() {
   return (
     <>
-      <h1 className="text-6xl mb-4">David Blatt's Portfolio Website</h1>
-      <p className="mb-4 text-2xl font-light">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum harum
-        sequi qui maxime delectus voluptatem saepe est, consequatur distinctio
-        nemo.
-      </p>
+      <h1 className="text-6xl mb-4 mt-4">David Blatt's Portfolio Website</h1>
+      <h2 className="mb-4 text-2xl font-light">
+        View some of the project's I've been working on
+      </h2>
+      <Project />
     </>
   )
 }

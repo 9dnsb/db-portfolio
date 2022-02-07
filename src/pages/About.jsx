@@ -3,10 +3,18 @@ function About() {
     <>
       <h1 className="text-6xl mb-4">About</h1>
       <p className="mb-4 text-2xl font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem
-        sapiente labore iure, voluptates repudiandae. Voluptatibus, reiciendis
-        sapiente velit provident maiores consectetur neque et totam! Animi
-        eligendi commodi amet porro.
+        This website was made using React, Tailwind, and daisyUI.
+      </p>
+      <p className="mb-4 text-2xl font-light">
+        I have tried to make the code as clean as possible. It can be viewed on{' '}
+        <a
+          href="https://github.com/9dnsb/db-portfolio"
+          className="text-accent"
+          target="_blank"
+          rel="noreferrer"
+        >
+          my Github repository
+        </a>
       </p>
     </>
   )
