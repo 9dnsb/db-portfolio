@@ -6,7 +6,7 @@ function About() {
         This website was made using React, Tailwind, and daisyUI.
       </p>
       <p className="mb-4 text-2xl font-light">
-        I have tried to make the code as clean as possible. It can be viewed on
+        I have tried to make the code as clean as possible. It can be viewed on{' '}
         <a
           href="https://github.com/9dnsb/db-portfolio"
           className="text-accent"
