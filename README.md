@@ -5,7 +5,7 @@
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://lgtm.com/projects/g/9dnsb/db-portfolio/alerts/"><img alt="Total alerts" src="https://img.shields.io/lgtm/alerts/g/9dnsb/db-portfolio.svg?logo=lgtm&logoWidth=18"/></a>
-<a href="https://lgtm.com/projects/g/9dnsb/db-portfolio/alerts/"><img alt="Total alerts" src="https://img.shields.io/lgtm/alerts/g/9dnsb/db-portfolio.svg?logo=lgtm&logoWidth=18"/></a>
+  <a href="https://lgtm.com/projects/g/9dnsb/db-portfolio/context:javascript"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/9dnsb/db-portfolio.svg?logo=lgtm&logoWidth=18"/></a>
 </p>
 
 > Website that displays the latest project I've been working on
