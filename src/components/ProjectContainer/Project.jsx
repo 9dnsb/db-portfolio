@@ -8,15 +8,13 @@ function Project() {
         />
       </figure>
       <div className="card-body mx-auto">
-        <h2 className="card-title margin-bottom-1">
-          Apex Legends Data Tracker
-        </h2>
+        <h2 className="margin-bottom-1">Apex Legends Data Tracker</h2>
         <p>
           Website that displays stats and info for the game Apex Legends. Users
           can access up-to-date game info and player stats
         </p>
 
-        <button className="btn btn-outline btn-accent">
+        <button className="btn">
           <a
             href="https://flamboyant-leakey-fe8698.netlify.app/"
             target="_blank"
