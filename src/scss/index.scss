@@ -1,0 +1,63 @@
+@import '../../node_modules/include-media/dist/include-media';
+@import '../../node_modules/rfs/scss';
+@import 'colors';
+@import 'functions';
+@import 'utilities';
+@import 'variables';
+
+@import 'media';
+
+#main-nav {
+  padding: 1rem;
+  @include dc($dark-color);
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    justify-content: center;
+
+    #nav-items {
+      display: flex;
+      align-items: center;
+
+      &-items {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: text($dark-color);
+      transition: all 0.5s ease;
+      &:hover {
+        color: darken($color: text($dark-color), $amount: 20%);
+        text-decoration: underline;
+        font-size: 18.5px;
+      }
+    }
+  }
+}
+
+#main-page-heading h2 {
+  font-weight: 400;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+#main-footer {
+  @include dc($dark-color);
+  height: 5rem;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.card-body {
+  width: 90%;
+}

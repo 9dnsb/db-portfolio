@@ -1,0 +1,105 @@
+// from https://gist.github.com/prasofty/2b5f290e1d60f17b5acb
+
+$space-values: (0, 1, 2, 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50) !default;
+
+$spaces: (padding, margin) !default;
+
+$space-sides: (top, right, bottom, left) !default;
+
+@mixin make-spaces() {
+  @each $space in $spaces {
+    @each $value in $space-values {
+      .#{$space}-#{$value} {
+        #{$space}: #{$value}#{'rem'};
+      }
+      @each $side in $space-sides {
+        .#{$space}-#{$side}-#{$value} {
+          #{$space}-#{$side}: #{$value}#{'rem'};
+        }
+      }
+    }
+  }
+}
+@include make-spaces();
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include dc($light-color);
+  font-family: $font-stack;
+  line-height: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn a {
+  font-family: $font-stack;
+}
+
+.container {
+  max-width: 95%;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
+.line {
+  border-left: 2px solid darken($color: text($dark-color), $amount: 40%);
+  height: 2rem;
+  margin: 0 1rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mx-auto {
+  margin: 0 auto;
+  display: block;
+}
+
+.btn {
+  background-color: $dark-color;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: $dark-color;
+
+  @include font-size(1.3rem);
+
+  transition: color 100ms;
+  margin: 1rem 0;
+  a {
+    color: text($dark-color);
+    padding: 1rem;
+    display: block;
+  }
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: $light-color;
+  border-style: solid;
+  a {
+    color: text($light-color);
+  }
+}
+
+p a {
+  text-decoration: none;
+  color: $primary-color;
+  transition: all 0.5s ease;
+  &:hover {
+    color: darken($color: $primary-color, $amount: 20%);
+    text-decoration: underline;
+  }
+}

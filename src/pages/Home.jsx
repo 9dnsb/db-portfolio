@@ -3,11 +3,15 @@ import Project from '../components/ProjectContainer/Project'
 function Home() {
   return (
     <>
-      <h1 className="text-4xl mb-4 mt-4">David Blatt's Portfolio Website</h1>
-      <h2 className="mb-4 text-2xl font-light">
-        View some of the project's I've been working on
-      </h2>
-      <Project />
+      <div id="main-page-heading">
+        <h1 className="margin-top-2">David Blatt's Portfolio Website</h1>
+        <h2 className="margin-top-1">
+          View some of the project's I've been working on
+        </h2>
+      </div>
+      <div className="margin-top-3">
+        <Project />
+      </div>
     </>
   )
 }
