@@ -1,22 +1,21 @@
-function Project() {
+function Project({project}) {
   return (
     <div className="card margin-bottom-2">
       <figure className="main-img-size mx-auto">
         <img
-          src="https://www.pngitem.com/pimgs/m/476-4763739_red-apex-legends-logo-png-hd-pngbg-poster.png"
+          src={project.img}
           alt=""
         />
       </figure>
       <div className="card-body mx-auto">
-        <h2 className="margin-bottom-1">Apex Legends Data Tracker</h2>
+        <h2 className="margin-bottom-1">{project.title}</h2>
         <p>
-          Website that displays stats and info for the game Apex Legends. Users
-          can access up-to-date game info and player stats
+          {project.p}
         </p>
 
         <button className="btn">
           <a
-            href="https://flamboyant-leakey-fe8698.netlify.app/"
+            href={project.link}
             target="_blank"
             rel="noreferrer"
           >
