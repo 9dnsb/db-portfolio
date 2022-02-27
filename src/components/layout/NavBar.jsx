@@ -12,7 +12,7 @@ function NavBar() {
       <div id="main-nav">
         <ul className="nav-items">
           {navigation.map((navItem, index) => (
-            <li className="nav-items-items" key={index}>
+            <li className="nav-items-items line" key={index}>
               <Link to={navItem.href}>{navItem.name}</Link>
             </li>
           ))}
