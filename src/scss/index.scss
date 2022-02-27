@@ -10,6 +10,10 @@
 #main-nav {
   padding: 1rem;
   @include dc($dark-color);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  justify-content: center;
 
   ul {
     display: grid;
@@ -17,13 +21,14 @@
     list-style: none;
     justify-content: center;
 
-    #nav-items {
+    .nav-items {
       display: flex;
       align-items: center;
 
       &-items {
         display: flex;
         align-items: center;
+        margin-right: 1rem;
       }
     }
 

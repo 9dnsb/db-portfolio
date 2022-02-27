@@ -37,8 +37,24 @@ a {
   text-decoration: none;
 }
 
-.btn a {
-  font-family: $font-stack;
+.aButton {
+  color: text($dark-color);
+  padding: 1rem;
+  display: inline-block;
+  background-color: $dark-color;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: $dark-color;
+  @include font-size(1.3rem);
+  transition: color 100ms;
+  margin: 1rem 0;
+
+  &:hover,
+  &:focus {
+    background-color: $light-color;
+    border-style: solid;
+    color: text($light-color);
+  }
 }
 
 .container {
@@ -47,9 +63,9 @@ a {
   margin: auto;
 }
 
-.line {
-  border-left: 2px solid darken($color: text($dark-color), $amount: 40%);
-  height: 2rem;
+.line:not(:last-child) {
+  border-right: 2px solid darken($color: text($dark-color), $amount: 40%);
+
   margin: 0 1rem;
 }
 
@@ -68,38 +84,12 @@ a {
   display: block;
 }
 
-.btn {
-  background-color: $dark-color;
-  border-radius: 8px;
-  border-style: solid;
-  border-color: $dark-color;
-
-  @include font-size(1.3rem);
-
-  transition: color 100ms;
-  margin: 1rem 0;
-  a {
-    color: text($dark-color);
-    padding: 1rem;
-    display: block;
-  }
-}
-
-.btn:hover,
-.btn:focus {
-  background-color: $light-color;
-  border-style: solid;
-  a {
-    color: text($light-color);
-  }
-}
-
 p a {
   text-decoration: none;
-  color: $primary-color;
+  color: darken($color: $primary-color, $amount: 10%);
   transition: all 0.5s ease;
   &:hover {
-    color: darken($color: $primary-color, $amount: 20%);
+    color: darken($color: $primary-color, $amount: 30%);
     text-decoration: underline;
   }
 }

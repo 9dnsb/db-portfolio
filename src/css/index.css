@@ -575,8 +575,30 @@ a {
   text-decoration: none;
 }
 
-.btn a {
-  font-family: "Roboto", sans-serif;
+.aButton {
+  color: #f4f4f4;
+  padding: 1rem;
+  display: inline-block;
+  background-color: #333;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #333;
+  font-size: calc(1.255rem + 0.06vw);
+  -webkit-transition: color 100ms;
+  transition: color 100ms;
+  margin: 1rem 0;
+}
+
+@media (min-width: 1200px) {
+  .aButton {
+    font-size: 1.3rem;
+  }
+}
+
+.aButton:hover, .aButton:focus {
+  background-color: #f4f4f4;
+  border-style: solid;
+  color: #333;
 }
 
 .container {
@@ -585,9 +607,8 @@ a {
   margin: auto;
 }
 
-.line {
-  border-left: 2px solid #8e8e8e;
-  height: 2rem;
+.line:not(:last-child) {
+  border-right: 2px solid #8e8e8e;
   margin: 0 1rem;
 }
 
@@ -609,49 +630,15 @@ a {
   display: block;
 }
 
-.btn {
-  background-color: #333;
-  border-radius: 8px;
-  border-style: solid;
-  border-color: #333;
-  font-size: calc(1.255rem + 0.06vw);
-  -webkit-transition: color 100ms;
-  transition: color 100ms;
-  margin: 1rem 0;
-}
-
-@media (min-width: 1200px) {
-  .btn {
-    font-size: 1.3rem;
-  }
-}
-
-.btn a {
-  color: #f4f4f4;
-  padding: 1rem;
-  display: block;
-}
-
-.btn:hover,
-.btn:focus {
-  background-color: #f4f4f4;
-  border-style: solid;
-}
-
-.btn:hover a,
-.btn:focus a {
-  color: #333;
-}
-
 p a {
   text-decoration: none;
-  color: steelblue;
+  color: #38678f;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 p a:hover {
-  color: #294d6b;
+  color: #1b3246;
   text-decoration: underline;
 }
 
@@ -690,6 +677,14 @@ p a:hover {
   padding: 1rem;
   background: #333;
   color: #f4f4f4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #main-nav ul {
@@ -703,7 +698,7 @@ p a:hover {
           justify-content: center;
 }
 
-#main-nav ul #nav-items {
+#main-nav ul .nav-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,13 +707,14 @@ p a:hover {
           align-items: center;
 }
 
-#main-nav ul #nav-items-items {
+#main-nav ul .nav-items-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 1rem;
 }
 
 #main-nav ul a {
