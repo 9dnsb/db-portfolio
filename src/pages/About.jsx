@@ -1,3 +1,5 @@
+import { accessibilityText } from 'npmtestdb99'
+
 function About() {
   return (
     <>
@@ -7,7 +9,7 @@ function About() {
         Sass without any CSS frameworks .
       </p>
       <p className="margin-top-1">
-        I have tried to make the code as clean as possible. It can be viewed on{' '}
+        {accessibilityText}{' '}
         <a
           href="https://github.com/9dnsb/db-portfolio"
           target="_blank"
