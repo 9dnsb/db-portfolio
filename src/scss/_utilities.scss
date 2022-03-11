@@ -42,7 +42,7 @@ a {
 }
 
 .aButton {
-  color: text(colors.$dark-color);
+  color: functions.text(colors.$dark-color);
   padding: 1rem;
   display: inline-block;
   background-color: colors.$dark-color;
@@ -57,7 +57,7 @@ a {
   &:focus {
     background-color: colors.$light-color;
     border-style: solid;
-    color: text(colors.$light-color);
+    color: functions.text(colors.$light-color);
   }
 }
 

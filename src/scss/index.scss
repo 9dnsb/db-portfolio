@@ -34,7 +34,7 @@
 
     a {
       text-decoration: none;
-      color: text(colors.$dark-color);
+      color: functions.text(colors.$dark-color);
       transition: all 0.5s ease;
       &:hover {
         color: darken($color: functions.text(colors.$dark-color), $amount: 20%);
