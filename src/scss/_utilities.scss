@@ -1,4 +1,8 @@
 // from https://gist.github.com/prasofty/2b5f290e1d60f17b5acb
+@use 'colors';
+@use 'functions';
+@import '../../node_modules/include-media/dist/include-media';
+@import '../../node_modules/rfs/scss';
 
 $space-values: (0, 1, 2, 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50) !default;
 
@@ -28,8 +32,8 @@ $space-sides: (top, right, bottom, left) !default;
 }
 
 body {
-  @include dc($light-color);
-  font-family: $font-stack;
+  @include functions.dc(colors.$light-color);
+  font-family: colors.$font-stack;
   line-height: 2rem;
 }
 
@@ -38,22 +42,22 @@ a {
 }
 
 .aButton {
-  color: text($dark-color);
+  color: text(colors.$dark-color);
   padding: 1rem;
   display: inline-block;
-  background-color: $dark-color;
+  background-color: colors.$dark-color;
   border-radius: 8px;
   border-style: solid;
-  border-color: $dark-color;
+  border-color: colors.$dark-color;
   @include font-size(1.3rem);
   transition: color 100ms;
   margin: 1rem 0;
 
   &:hover,
   &:focus {
-    background-color: $light-color;
+    background-color: colors.$light-color;
     border-style: solid;
-    color: text($light-color);
+    color: text(colors.$light-color);
   }
 }
 
@@ -64,7 +68,8 @@ a {
 }
 
 .line:not(:last-child) {
-  border-right: 2px solid darken($color: text($dark-color), $amount: 40%);
+  border-right: 2px solid
+    darken($color: functions.text(colors.$dark-color), $amount: 40%);
   padding-right: 12px;
 }
 
@@ -85,10 +90,10 @@ a {
 
 p a {
   text-decoration: none;
-  color: darken($color: $primary-color, $amount: 10%);
+  color: darken($color: colors.$primary-color, $amount: 10%);
   transition: all 0.5s ease;
   &:hover {
-    color: darken($color: $primary-color, $amount: 30%);
+    color: darken($color: colors.$primary-color, $amount: 30%);
     text-decoration: underline;
   }
 }

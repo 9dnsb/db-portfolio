@@ -1,15 +1,14 @@
-@import '../../node_modules/include-media/dist/include-media';
-@import '../../node_modules/rfs/scss';
-@import 'colors';
-@import 'functions';
-@import 'utilities';
-@import 'variables';
+@use 'colors';
+@use 'functions';
 
-@import 'media';
+@use 'utilities';
+@use 'variables';
+
+@use 'media';
 
 #main-nav {
   padding: 1rem;
-  @include dc($dark-color);
+  @include functions.dc(colors.$dark-color);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   list-style: none;
@@ -35,10 +34,10 @@
 
     a {
       text-decoration: none;
-      color: text($dark-color);
+      color: text(colors.$dark-color);
       transition: all 0.5s ease;
       &:hover {
-        color: darken($color: text($dark-color), $amount: 20%);
+        color: darken($color: functions.text(colors.$dark-color), $amount: 20%);
         text-decoration: underline;
         font-size: 18.5px;
       }
@@ -58,7 +57,7 @@
 }
 
 #main-footer {
-  @include dc($dark-color);
+  @include functions.dc(colors.$dark-color);
   height: 5rem;
   text-align: center;
   padding: 15px 0;

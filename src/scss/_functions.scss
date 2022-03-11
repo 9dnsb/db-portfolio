@@ -1,8 +1,10 @@
+@use 'colors';
+
 @function text($bg) {
   @if (lightness($bg) > 50) {
-    @return $dark-color;
+    @return colors.$dark-color;
   } @else {
-    @return $light-color;
+    @return colors.$light-color;
   }
 }
 
