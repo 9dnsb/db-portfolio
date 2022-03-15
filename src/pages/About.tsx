@@ -1,4 +1,3 @@
-// @ts-ignore
 import { accessibilityText } from 'npmtestdb99'
 
 function About() {
