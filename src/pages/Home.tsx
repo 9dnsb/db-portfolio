@@ -26,7 +26,7 @@ function Home() {
       </div>
       <div className="margin-top-3">
         {projectsObj.map((project, index) => (
-          <Project {...project} key={index} />
+          <Project project={project} key={index} />
         ))}
       </div>
     </>

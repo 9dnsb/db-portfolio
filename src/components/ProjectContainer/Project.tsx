@@ -1,6 +1,6 @@
 import { ProjectObject } from '../../types/ProjectType'
 
-function Project(project: ProjectObject) {
+function Project({ project }: { project: ProjectObject }) {
   return (
     <div className="card margin-bottom-2">
       <figure className="main-img-size mx-auto">
