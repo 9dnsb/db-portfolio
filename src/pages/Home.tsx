@@ -1,7 +1,8 @@
 import Project from '../components/ProjectContainer/Project'
+import { ProjectObject } from '../types/ProjectType'
 
 function Home() {
-  const projectsObj = [
+  const projectsObj: ProjectObject[] = [
     {
       img: 'https://www.pngitem.com/pimgs/m/476-4763739_red-apex-legends-logo-png-hd-pngbg-poster.png',
       title: 'Apex Legends Data Tracker',
@@ -25,7 +26,7 @@ function Home() {
       </div>
       <div className="margin-top-3">
         {projectsObj.map((project, index) => (
-          <Project project={project} key={index} />
+          <Project {...project} key={index} />
         ))}
       </div>
     </>
