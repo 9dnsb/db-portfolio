@@ -43,13 +43,13 @@ a {
 
 .aButton {
   color: functions.text(colors.$dark-color);
-  padding: 1rem;
+  padding: 0.6rem;
   display: inline-block;
   background-color: colors.$dark-color;
   border-radius: 8px;
   border-style: solid;
   border-color: colors.$dark-color;
-  @include font-size(1.3rem);
+  @include font-size(1.1rem);
   transition: color 100ms;
   margin: 1rem 0;
 

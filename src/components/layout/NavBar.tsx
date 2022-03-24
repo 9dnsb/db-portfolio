@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { FaGrav } from 'react-icons/fa'
 
 function NavBar() {
@@ -13,7 +13,12 @@ function NavBar() {
         <ul className="nav-items">
           {navigation.map((navItem, index) => (
             <li className="nav-items-items line" key={index}>
-              <Link to={navItem.href}>{navItem.name}</Link>
+              <NavLink
+                to={navItem.href}
+                className={({ isActive }) => (isActive ? 'active-link' : '')}
+              >
+                {navItem.name}
+              </NavLink>
             </li>
           ))}
         </ul>

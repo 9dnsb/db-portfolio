@@ -17,12 +17,23 @@ $breakpoints: (
 }
 
 @include media('>phone3') {
+  .container {
+    max-width: 800px;
+  }
   #main-nav ul #nav-items {
     margin-left: 2rem;
   }
   .main-img-size {
     img {
       width: 50%;
+    }
+  }
+}
+
+@include media('>tablet') {
+  .main-img-size {
+    img {
+      width: 40%;
     }
   }
 }

@@ -577,20 +577,15 @@ a {
 
 .aButton {
   color: #f4f4f4;
-  padding: 1rem;
+  padding: 0.6rem;
   display: inline-block;
   background-color: #333;
   border-radius: 8px;
   border-style: solid;
   border-color: #333;
-  font-size: calc(1.255rem + 0.06vw);
+  font-size: 1.1rem;
   transition: color 100ms;
   margin: 1rem 0;
-}
-@media (min-width: 1200px) {
-  .aButton {
-    font-size: 1.3rem;
-  }
 }
 .aButton:hover, .aButton:focus {
   background-color: #f4f4f4;
@@ -640,12 +635,21 @@ p a:hover {
   }
 }
 @media (min-width: 651px) {
+  .container {
+    max-width: 800px;
+  }
+
   #main-nav ul #nav-items {
     margin-left: 2rem;
   }
 
   .main-img-size img {
     width: 50%;
+  }
+}
+@media (min-width: 769px) {
+  .main-img-size img {
+    width: 40%;
   }
 }
 @media (max-width: 649px) {
@@ -689,6 +693,9 @@ p a:hover {
   align-items: center;
   justify-content: center;
   margin-right: 1rem;
+}
+#main-nav ul .nav-items-items .active-link {
+  text-decoration: underline;
 }
 #main-nav ul a {
   text-decoration: none;
