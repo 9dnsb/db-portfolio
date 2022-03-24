@@ -14,11 +14,17 @@ $breakpoints: (
   #main-nav ul #nav-items {
     margin-left: 1rem;
   }
+  .container .iconGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @include media('>phone3') {
   .container {
     max-width: 800px;
+    .iconGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
   #main-nav ul #nav-items {
     margin-left: 2rem;
@@ -35,6 +41,9 @@ $breakpoints: (
     img {
       width: 40%;
     }
+  }
+  .container .iconGrid {
+    grid-template-columns: repeat(7, 1fr);
   }
 }
 

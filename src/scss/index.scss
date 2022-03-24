@@ -5,6 +5,7 @@
 @use 'variables';
 
 @use 'media';
+@import '../../node_modules/rfs/scss';
 
 #main-nav {
   padding: 1rem;
@@ -15,10 +16,10 @@
   justify-content: center;
 
   ul {
+    margin-left: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 0fr);
     list-style: none;
-    justify-content: center;
 
     .nav-items {
       display: flex;
@@ -40,10 +41,11 @@
       text-decoration: none;
       color: functions.text(colors.$dark-color);
       transition: all 0.5s ease;
+      @include font-size(1.2rem);
       &:hover {
         color: darken($color: functions.text(colors.$dark-color), $amount: 20%);
         text-decoration: underline;
-        font-size: 18.5px;
+        @include font-size(1.4rem);
       }
     }
   }
@@ -71,6 +73,36 @@
   width: 90%;
 }
 
-.iconSize {
-  font-size: 3em;
+.iconGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  background-color: ccffff;
+
+  i {
+    font-size: 4.3em;
+  }
+}
+
+.stripe {
+  background-color: #ccffff;
+  height: 100px;
+  position: relative;
+}
+.stripe:before {
+  content: '';
+  background-color: #ccffff;
+  position: absolute;
+  height: 100%;
+  width: 4000px;
+  left: -2000px;
+  z-index: -1;
+}
+
+#mainPage {
+  h2 {
+    font-weight: 400;
+  }
 }
