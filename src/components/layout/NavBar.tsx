@@ -4,8 +4,8 @@ import { FaGrav } from 'react-icons/fa'
 function NavBar() {
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
     { name: 'Projects', href: '/projects' },
+    { name: 'About', href: '/about' },
   ]
 
   return (
