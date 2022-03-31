@@ -23,7 +23,6 @@ const initialValues: initialValuesType = {
 }
 
 const encode = (data: initialValuesFormType) => {
-  console.log('encode', data)
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data.key))
     .join('&')
@@ -35,7 +34,6 @@ const SignInForm = () => {
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={(values: initialValuesType, { resetForm }) => {
-        console.log({ 'form-name': 'contact', ...values })
         fetch('/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
