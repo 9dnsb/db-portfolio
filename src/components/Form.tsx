@@ -2,6 +2,8 @@ import { Formik, Form, Field, ErrorMessage } from 'formik'
 
 import './Form.scss'
 import validationSchema from './validationSchema'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 interface initialValuesType {
   email: string
@@ -26,15 +28,20 @@ const SignInForm = () => {
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={(values: initialValuesType) => {
-        console.log(values)
+      onSubmit={(values: initialValuesType, { resetForm }) => {
         fetch('/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: encode({ 'form-name': 'contact', ...values }),
         })
-          .then(() => alert('Success!'))
-          .catch((error) => alert(error))
+          .then(() => {
+            toast.success('Form Submitted')
+
+            resetForm()
+          })
+          .catch((error) => {
+            toast.error('Error submitting form')
+          })
       }}
     >
       {(formik) => {

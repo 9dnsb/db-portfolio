@@ -5,10 +5,12 @@ import About from './pages/About'
 import Footer from './components/layout/Footer'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   return (
     <Router>
+      <ToastContainer />
       <div className="" id="main-container">
         <NavBar />
         <main className="container ">

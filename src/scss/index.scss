@@ -8,7 +8,7 @@
 @import '../../node_modules/rfs/scss';
 
 #main-nav {
-  padding: 1rem;
+  padding: 2px;
   @include functions.dc(colors.$dark-color);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -45,7 +45,7 @@
       text-decoration: none;
       color: functions.text(colors.$dark-color);
       transition: all 0.5s ease;
-      @include font-size(1.2rem);
+      @include font-size(0.9rem);
       &:hover {
         color: darken($color: functions.text(colors.$dark-color), $amount: 20%);
         text-decoration: underline;
