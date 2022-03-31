@@ -3,9 +3,9 @@ import { ProjectObject } from '../../types/ProjectType'
 function Project({ project }: { project: ProjectObject }) {
   return (
     <div className="card margin-bottom-2">
-      <figure className="main-img-size mx-auto ">
+      <div className="main-img-size mx-auto ">
         <img className="margin-top-1" src={project.img} alt="" />
-      </figure>
+      </div>
       <div className="card-body mx-auto">
         <h2 className="margin-bottom-1 margin-top-1">{project.title}</h2>
         <p>{project.p}</p>

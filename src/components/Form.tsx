@@ -86,7 +86,7 @@ const SignInForm = () => {
               </div>
 
               <div className="form-row">
-                <label htmlFor="subject">Details</label>
+                <label htmlFor="details">Details</label>
                 <Field
                   type="text"
                   name="details"
