@@ -5,6 +5,7 @@ function NavBar() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Projects', href: '/projects' },
+    { name: 'Contact', href: '/contact' },
     { name: 'About', href: '/about' },
   ]
 
@@ -25,7 +26,7 @@ function NavBar() {
         </ul>
 
         <div id="nav-icon">
-          <FaGrav size="40px" className="mx-auto" />
+          <FaGrav size="40px" />
         </div>
       </div>
     </nav>

@@ -679,20 +679,26 @@ p a:hover {
   .main-img-size img {
     width: 100%;
   }
+
+  .form-container {
+    padding: 1.5rem 2rem !important;
+  }
 }
 #main-nav {
   padding: 1rem;
   background: #333;
   color: #f4f4f4;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   list-style: none;
   justify-content: center;
 }
+#main-nav #nav-icon {
+  grid-column: 3/3;
+}
 #main-nav ul {
   margin-left: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 0fr);
+  display: flex;
   list-style: none;
 }
 #main-nav ul .nav-items {

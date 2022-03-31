@@ -11,14 +11,18 @@
   padding: 1rem;
   @include functions.dc(colors.$dark-color);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   list-style: none;
   justify-content: center;
 
+  #nav-icon {
+    grid-column: 3/3;
+  }
+
   ul {
     margin-left: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 0fr);
+    display: flex;
+
     list-style: none;
 
     .nav-items {

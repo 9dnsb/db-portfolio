@@ -11,6 +11,7 @@
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "devicon": "^2.15.1",
+    "formik": "^2.2.9",
     "include-media": "^1.4.10",
     "npmtestdb99": "^1.0.8",
     "react": "^18.0.0",
@@ -21,7 +22,8 @@
     "rfs": "^9.0.6",
     "sass": "^1.49.10",
     "typescript": "^4.6.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
