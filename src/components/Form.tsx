@@ -24,7 +24,7 @@ const initialValues: initialValuesType = {
 
 const encode = (data: initialValuesFormType) => {
   return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data.key))
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&')
 }
 
