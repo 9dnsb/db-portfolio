@@ -32,9 +32,10 @@ $space-sides: (top, right, bottom, left) !default;
 }
 
 body {
-  @include functions.dc(colors.$light-color);
+  background-color: colors.$primary-color;
+  color: colors.$text-color;
   font-family: colors.$font-stack;
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
 a {
@@ -42,22 +43,22 @@ a {
 }
 
 .aButton {
-  color: functions.text(colors.$dark-color);
+  color: colors.$accent-text-color;
   padding: 0.6rem;
   display: inline-block;
-  background-color: colors.$dark-color;
+  background-color: colors.$accent-color;
   border-radius: 8px;
   border-style: solid;
-  border-color: colors.$dark-color;
+  border-color: colors.$accent-color;
   @include font-size(1.1rem);
   transition: color 100ms;
   margin: 1rem 0;
 
   &:hover,
   &:focus {
-    background-color: colors.$light-color;
     border-style: solid;
-    color: functions.text(colors.$light-color);
+    border-color: colors.$accent-text-color-hover;
+    color: colors.$accent-text-color-hover;
   }
 }
 
@@ -68,8 +69,7 @@ a {
 }
 
 .line:not(:last-child) {
-  border-right: 2px solid
-    darken($color: functions.text(colors.$dark-color), $amount: 40%);
+  border-right: 2px solid colors.$text-color;
   padding-right: 12px;
 }
 
@@ -90,10 +90,10 @@ a {
 
 p a {
   text-decoration: none;
-  color: darken($color: colors.$primary-color, $amount: 10%);
+  color: #0000b5;
   transition: all 0.5s ease;
   &:hover {
-    color: darken($color: colors.$primary-color, $amount: 30%);
+    color: #522032;
     text-decoration: underline;
   }
 }

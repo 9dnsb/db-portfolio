@@ -565,10 +565,10 @@
 }
 
 body {
-  background: #f4f4f4;
-  color: #333;
+  background-color: #51a4ed;
+  color: #600000;
   font-family: "Roboto", sans-serif;
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
 a {
@@ -576,21 +576,21 @@ a {
 }
 
 .aButton {
-  color: #f4f4f4;
+  color: #ffecdb;
   padding: 0.6rem;
   display: inline-block;
-  background-color: #333;
+  background-color: #600000;
   border-radius: 8px;
   border-style: solid;
-  border-color: #333;
+  border-color: #600000;
   font-size: 1.1rem;
   transition: color 100ms;
   margin: 1rem 0;
 }
 .aButton:hover, .aButton:focus {
-  background-color: #f4f4f4;
   border-style: solid;
-  color: #333;
+  border-color: #a2ded0;
+  color: #a2ded0;
 }
 
 .container {
@@ -600,7 +600,7 @@ a {
 }
 
 .line:not(:last-child) {
-  border-right: 2px solid #8e8e8e;
+  border-right: 2px solid #600000;
   padding-right: 12px;
 }
 
@@ -621,11 +621,11 @@ a {
 
 p a {
   text-decoration: none;
-  color: #38678f;
+  color: #0000b5;
   transition: all 0.5s ease;
 }
 p a:hover {
-  color: #1b3246;
+  color: #522032;
   text-decoration: underline;
 }
 
@@ -693,9 +693,6 @@ p a:hover {
   }
 }
 #main-nav {
-  padding: 2px;
-  background: #333;
-  color: #f4f4f4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
@@ -724,12 +721,12 @@ p a:hover {
 }
 #main-nav ul a {
   text-decoration: none;
-  color: #f4f4f4;
+  color: #600000;
   transition: all 0.5s ease;
   font-size: 0.9rem;
 }
 #main-nav ul a:hover {
-  color: #c1c1c1;
+  color: #600000;
   text-decoration: underline;
   font-size: calc(1.265rem + 0.18vw);
 }
@@ -751,11 +748,10 @@ p a:hover {
 }
 
 #main-footer {
-  background: #333;
-  color: #f4f4f4;
-  height: 5rem;
   text-align: center;
   padding: 15px 0;
+  background: #3d4856;
+  color: white;
 }
 
 .card-body {

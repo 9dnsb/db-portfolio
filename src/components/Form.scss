@@ -1,6 +1,6 @@
-$primary-color: #1d3557;
+$primary-color: #51a4ed;
 $error-color: #ac1522;
-$text-color: #293241;
+$text-color: #600000;
 $color-white: #fff;
 $shadow-color: #dedee6;
 $border-radius: 4px;
@@ -48,7 +48,7 @@ $border-radius: 4px;
   }
 
   button {
-    color: $color-white;
+    color: $text-color;
     width: 100%;
     font-size: 1.2rem;
     background: $primary-color;

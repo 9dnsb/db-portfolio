@@ -8,8 +8,6 @@
 @import '../../node_modules/rfs/scss';
 
 #main-nav {
-  padding: 2px;
-  @include functions.dc(colors.$dark-color);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
@@ -43,11 +41,11 @@
 
     a {
       text-decoration: none;
-      color: functions.text(colors.$dark-color);
+      color: colors.$text-color;
       transition: all 0.5s ease;
       @include font-size(0.9rem);
       &:hover {
-        color: darken($color: functions.text(colors.$dark-color), $amount: 20%);
+        color: colors.$text-color;
         text-decoration: underline;
         @include font-size(1.4rem);
       }
@@ -67,10 +65,10 @@
 }
 
 #main-footer {
-  @include functions.dc(colors.$dark-color);
-  height: 5rem;
   text-align: center;
   padding: 15px 0;
+  background: colors.$secondary-color;
+  color: colors.$secondary-color-text;
 }
 
 .card-body {
