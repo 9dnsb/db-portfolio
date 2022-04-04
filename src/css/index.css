@@ -565,10 +565,10 @@
 }
 
 body {
-  background-color: #51a4ed;
-  color: #600000;
+  background-color: #fefefe;
+  color: #1c2a43;
   font-family: "Roboto", sans-serif;
-  line-height: 3rem;
+  line-height: 3em;
 }
 
 a {
@@ -579,10 +579,10 @@ a {
   color: #ffecdb;
   padding: 0.6rem;
   display: inline-block;
-  background-color: #600000;
+  background-color: #05182a;
   border-radius: 8px;
   border-style: solid;
-  border-color: #600000;
+  border-color: #05182a;
   font-size: 1.1rem;
   transition: color 100ms;
   margin: 1rem 0;
@@ -600,18 +600,20 @@ a {
 }
 
 .line:not(:last-child) {
-  border-right: 2px solid #600000;
+  border-right: 2px solid #1c2a43;
   padding-right: 12px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transition: 0.3s;
   text-align: center;
+  background: #51a4ed;
+  border-radius: 2px;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .mx-auto {
@@ -668,7 +670,9 @@ p a:hover {
   }
 
   .container .iconGrid {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    padding: 0 1rem;
   }
 }
 @media (max-width: 649px) {
@@ -721,12 +725,12 @@ p a:hover {
 }
 #main-nav ul a {
   text-decoration: none;
-  color: #600000;
+  color: #1c2a43;
   transition: all 0.5s ease;
   font-size: 0.9rem;
 }
 #main-nav ul a:hover {
-  color: #600000;
+  color: #1c2a43;
   text-decoration: underline;
   font-size: calc(1.265rem + 0.18vw);
 }
@@ -765,9 +769,15 @@ p a:hover {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   background-color: ccffff;
+  line-height: 2em;
 }
 .iconGrid i {
   font-size: 4.3em;
+}
+
+.portHeader {
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .stripe {

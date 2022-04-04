@@ -82,10 +82,16 @@
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   background-color: ccffff;
+  line-height: 2em;
 
   i {
     font-size: 4.3em;
   }
+}
+
+.portHeader {
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .stripe {
