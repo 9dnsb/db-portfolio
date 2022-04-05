@@ -1,29 +1,35 @@
-import { NavLink } from 'react-router-dom'
 import { FaGrav } from 'react-icons/fa'
+import { useState } from 'react'
+import Hamburger from 'hamburger-react'
+import classNames from 'classnames'
+import NavListItems from './NavListItems'
 
 function NavBar() {
-  const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'About', href: '/about' },
-  ]
+  const [isOpen, setOpen] = useState(false)
+
+  const hamClicked = () => {
+    window.scrollTo(0, 0)
+    setOpen((prevCheck) => !prevCheck)
+  }
 
   return (
     <nav>
+      <div id="hamburger" className={classNames(isOpen && 'positionFixed')}>
+        <Hamburger toggled={isOpen} toggle={hamClicked} label="menu" />
+        <FaGrav size="40px" className={classNames(isOpen && 'displayNone')} />
+      </div>
+      <div
+        id="mySidenav"
+        className={classNames(
+          'sidenav',
+          isOpen && 'width100',
+          !isOpen && 'width0'
+        )}
+      >
+        <NavListItems closeSideMenu={hamClicked} />
+      </div>
       <div id="main-nav">
-        <ul className="nav-items">
-          {navigation.map((navItem, index) => (
-            <li className="nav-items-items line" key={index}>
-              <NavLink
-                to={navItem.href}
-                className={({ isActive }) => (isActive ? 'active-link' : '')}
-              >
-                {navItem.name}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        <NavListItems closeSideMenu={() => null} />
 
         <div id="nav-icon">
           <FaGrav size="40px" />

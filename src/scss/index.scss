@@ -4,12 +4,22 @@
 @use 'utilities';
 @use 'variables';
 @use 'form';
+@use 'sideNav';
 
 @use 'media';
 @import '../../node_modules/rfs/scss';
 
-#main-nav {
+#hamburger {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  color: colors.$text-color;
+}
+
+#main-nav {
+  display: none;
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
   justify-content: center;
@@ -44,7 +54,7 @@
       text-decoration: none;
       color: colors.$text-color;
       transition: all 0.5s ease;
-      @include font-size(0.9rem);
+      @include font-size(1.4rem);
       &:hover {
         color: colors.$text-color;
         text-decoration: underline;

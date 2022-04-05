@@ -70,7 +70,8 @@ a {
 
 .line:not(:last-child) {
   border-right: 2px solid colors.$text-color;
-  padding-right: 12px;
+  padding-right: 0px;
+  padding-bottom: 1rem;
 }
 
 .card {

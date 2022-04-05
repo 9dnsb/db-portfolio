@@ -2,19 +2,30 @@
 @import '../../node_modules/rfs/scss';
 $breakpoints: (
   phone: 320px,
-  smallmenu: 408px,
+
   phone2: 500px,
   phone3: 650px,
   tablet: 768px,
   desktop: 1024px,
 );
 
-@include media('>smallmenu') {
-  #main-nav {
-    padding: 1rem !important;
-    ul li a {
-      @include font-size(1.2rem);
+@include media('>phone2') {
+  #main-container {
+    #main-nav {
+      display: grid;
+      padding: 1rem;
     }
+    #hamburger {
+      display: none;
+    }
+  }
+
+  .sidenav {
+    width: 0;
+  }
+  .line:not(:last-child) {
+    padding-right: 12px;
+    padding-bottom: 0rem;
   }
 }
 
