@@ -1,6 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 
-import './Form.scss'
 import validationSchema from './validationSchema'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
