@@ -16,7 +16,10 @@ function NavBar() {
     <nav>
       <div id="hamburger" className={classNames(isOpen && 'positionFixed')}>
         <Hamburger toggled={isOpen} toggle={hamClicked} label="menu" />
-        <FaGrav size="40px" className={classNames(isOpen && 'displayNone')} />
+        <FaGrav
+          size="40px"
+          className={classNames('justify-self', isOpen && 'displayNone')}
+        />
       </div>
       <div
         id="mySidenav"
