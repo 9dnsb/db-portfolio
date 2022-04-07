@@ -19,7 +19,9 @@ function About() {
           my Github repository{'.'}
         </a>
       </p>
-      <p className="margin-top-1">{accessibilityText} </p>
+      <p className="margin-top-1">
+        <>{accessibilityText}</>
+      </p>
     </>
   )
 }
