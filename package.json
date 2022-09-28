@@ -19,11 +19,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.0.8",
     "rfs": "^9.0.6",
-    "sass": "^1.54.9",
+    "sass": "^1.55.0",
     "typescript": "^4.8.4",
     "web-vitals": "^3.0.2",
     "yup": "^0.32.11"
