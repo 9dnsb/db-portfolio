@@ -3,7 +3,7 @@ import Project from './Project'
 
 function DisplayAllProjectsMap() {
   return (
-    <div className="margin-top-3">
+    <div>
       {projectsObj.map((project, index) => (
         <Project project={project} key={index} />
       ))}

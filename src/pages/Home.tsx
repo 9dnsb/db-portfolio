@@ -11,7 +11,7 @@ function Home() {
       </div>
 
       <DisplayAllIconsMap />
-      <h2 className="margin-top-5 portHeader">Some of my projects:</h2>
+      <h2 className="portHeader">Some of my projects:</h2>
       <DisplayAllProjectsMap />
     </div>
   )
