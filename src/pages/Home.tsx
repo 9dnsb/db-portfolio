@@ -6,17 +6,12 @@ function Home() {
     <div id="mainPage">
       <div id="main-page-heading">
         <div className="card">
-          <h1 className="margin-top-2 portHeader">
-            David Blatt's Portfolio Website
-          </h1>
+          <h1 className="margin-top-2 portHeader">David Blatt's Portfolio</h1>
         </div>
       </div>
 
       <DisplayAllIconsMap />
-      <h2 className="margin-top-5 portHeader">
-        Some of the project's I've been working on for fun to practice my
-        skills:
-      </h2>
+      <h2 className="margin-top-5 portHeader">Some of my projects:</h2>
       <DisplayAllProjectsMap />
     </div>
   )
