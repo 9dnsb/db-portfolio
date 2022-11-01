@@ -14,7 +14,8 @@ function Home() {
 
       <DisplayAllIconsMap />
       <h2 className="margin-top-5 portHeader">
-        View some of the project's I've been working on:
+        Some of the project's I've been working on for fun to practice my
+        skills:
       </h2>
       <DisplayAllProjectsMap />
     </div>
